@@ -1,0 +1,270 @@
+body {
+    background-image: url(/imagens/rrt1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção principal */
+section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    padding: 100px;
+}
+
+/* Estilo do texto */
+.content {
+    max-width: 400px;
+}
+
+.content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.content h1 .highlight {
+    color: #ff00ff;
+    /* Cor de destaque para o texto */
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da imagem e ícones sociais */
+aside img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+    object-fit: cover;
+}
+
+.social-icons {
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 8px;
+
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.2s;
+
+}
+
+.social-icons a:hover {
+    color: #ff00ff;
+}
+
+
+#borda {
+    border: 5px double rgb(0, 0, 0);
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+
+
+/* Centraliza os botões de abas */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #353535;
+    overflow: hidden;
+    position: fixed;
+    /* Fixa a barra no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Ajuste para o conteúdo não ficar escondido atrás da barra */
+body {
+    padding-top: 60px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+    /* Espaçamento entre o conteúdo principal e a seção de projetos */
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #ff00ff;
+    /* Rosa */
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Seção de Projetos */
+.projects-section {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Cabeçalho dos Projetos */
+.projects-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #ff00ff;
+    /* Rosa */
+    margin-bottom: 20px;
+}
+
+.projects-header i {
+    font-size: 1.8em;
+    margin-right: 10px;
+}
+
+/* Cartão de Projeto */
+.project-card {
+    cursor: pointer;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 300px;
+
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.4);
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    /* Espaço entre os cartões */
+    display: inline-block;
+    /* Para manter o layout em linha */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ff00ff;
+    /* Rosa */
+}
+
+.project-description {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ff00ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #d400d4;
+}
+
+/* Remover o overflow-x do slider */
+.projects-slider {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Para permitir que os projetos quebrem de linha se necessário */
+}
